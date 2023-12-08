@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>CRM Dashboard customers</title>
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+    <aside class="main-asside">
+      <a href="/" class="logo-link">
+        <svg width="37" height="37" class="logo-link-icon">
+          <use href="./images/symbol-defs.svg#icon-setting"></use>
+        </svg>
+        <span class="logo-link-text">Dashboard</span>
+        <span class="logo-link-v">v.01</span>
+      </a>
+      <svg class="close" height="16" width="16">
+        <use href="./images/symbol-defs.svg#icon-cross"></use>
+      </svg>
+      <ul class="list-asside">
+        <li class="item-asside">
+          <p>
+            <svg width="24" height="24" class="item-asside-icon">
+              <use href="./images/symbol-defs.svg#icon-key-square"></use>
+            </svg>
+            Dashboard
+          </p>
+        </li>
+        <li class="item-asside">
+          <p>
+            <svg width="24" height="24" class="item-asside-icon">
+              <use href="./images/symbol-defs.svg#icon-d-square"></use>
+            </svg>
+            Product
+          </p>
+          <svg width="16" height="16" class="item-asside-icon-arrow">
+            <use href="./images/symbol-defs.svg#icon-chevron-right"></use>
+          </svg>
+        </li>
+        <li class="item-asside action-asside">
+          <p>
+            <svg width="24" height="24" class="item-asside-icon">
+              <use href="./images/symbol-defs.svg#icon-user-square"></use>
+            </svg>
+            Customers
+          </p>
+          <svg width="16" height="16" class="item-asside-icon-arrow">
+            <use href="./images/symbol-defs.svg#icon-chevron-right-2-1"></use>
+          </svg>
+        </li>
+        <li class="item-asside">
+          <p>
+            <svg width="24" height="24" class="item-asside-icon">
+              <use href="./images/symbol-defs.svg#icon-wallet-money"></use>
+            </svg>
+            Income
+          </p>
+          <svg width="16" height="16" class="item-asside-icon-arrow">
+            <use href="./images/symbol-defs.svg#icon-chevron-right"></use>
+          </svg>
+        </li>
+        <li class="item-asside">
+          <p>
+            <svg width="24" height="24" class="item-asside-icon">
+              <use href="./images/symbol-defs.svg#icon-discount-shape"></use>
+            </svg>
+            Promote
+          </p>
+          <svg width="16" height="16" class="item-asside-icon-arrow">
+            <use href="./images/symbol-defs.svg#icon-chevron-right"></use>
+          </svg>
+        </li>
+        <li class="item-asside">
+          <p>
+            <svg width="24" height="24" class="item-asside-icon">
+              <use href="./images/symbol-defs.svg#icon-message-question"></use>
+            </svg>
+            Help
+          </p>
+          <svg width="16" height="16" class="item-asside-icon-arrow">
+            <use href="./images/symbol-defs.svg#icon-chevron-right"></use>
+          </svg>
+        </li>
+      </ul>
+      <div class="asside-user-wrapper">
+        <img src="./images/user-image.png" alt="User photo" height="42" width="42">
+        <div class="user-info">
+          <p class="user-name">Evano</p>
+          <p class="user-posad">Project Manager</p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="main-container">
+        <div class="burger-wrapper">
+          <svg class="burger" width="24" height="20">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+          <h1 class="title">Hello <span>Evano</span> 👋🏼,</h1>
+        </div>
+
+        <section class="table-section">
+          <div class="title-wrapper">
+            <div>
+              <h2 class="table-title">All Customers</h2>
+              <p class="table-text">Active Members</p>
+            </div>
+            <div class="search">
+              <label class="search-label">
+                <button class="search-btn">
+                  <svg class="search-btn-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-search"></use>
+                  </svg>
+                </button>
+                <input type="text" class="search-input" placeholder="Search">
+              </label>
+            </div>
+          </div>
+
+          <table class="table">
+            <tr>
+              <th>Customer Name</th>
+              <th>Company</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td><button class="table-btn">Active</button></td>
+            </tr>
+            <tr>
+              <td>Floyd Miles</td>
+              <td>Yahoo</td>
+              <td>(205) 555-0100</td>
+              <td>floyd@yahoo.com</td>
+              <td>Kiribati</td>
+              <td><button class="table-btn inActive">Inactive</button></td>
+            </tr>
+            <tr>
+              <td>Ronald Richards</td>
+              <td>Adobe</td>
+              <td>(302) 555-0107</td>
+              <td>ronald@adobe.com</td>
+              <td>Israel</td>
+              <td><button class="table-btn inActive">Inactive</button></td>
+            </tr>
+            <tr>
+              <td>Marvin McKinney</td>
+              <td>Tesla</td>
+              <td>(252) 555-0126</td>
+              <td>marvin@tesla.com</td>
+              <td>Iran</td>
+              <td><button class="table-btn">Active</button></td>
+            </tr>
+            <tr>
+              <td>Jerome Bell</td>
+              <td>Google</td>
+              <td>(629) 555-0129</td>
+              <td>jerome@google.com</td>
+              <td>Réunion</td>
+              <td><button class="table-btn">Active</button></td>
+            </tr>
+            <tr>
+              <td>Kathryn Murphy</td>
+              <td>Microsoft</td>
+              <td>(406) 555-0120</td>
+              <td>kathryn@microsoft.com</td>
+              <td>Curaçao</td>
+              <td><button class="table-btn">Active</button></td>
+            </tr>
+            <tr>
+              <td>Jacob Jonesr</td>
+              <td>Yahoo</td>
+              <td>(208) 555-0112</td>
+              <td>jacob@yahoo.com</td>
+              <td>Brazil</td>
+              <td><button class="table-btn">Active</button></td>
+            </tr>
+            <tr>
+              <td>Kristin Watson</td>
+              <td>Facebook</td>
+              <td>(704) 555-0127</td>
+              <td>kristin@facebook.com</td>
+              <td>Åland Islands</td>
+              <td><button class="table-btn inActive">Inactive</button></td>
+            </tr>
+          </table>
+
+          <div class="botton-table-wrapper">
+            <p class="table-info">Showing data 1 to 8 of 256K entries</p>
+
+            <div class="pagination-wrapper">
+              <button class="pagination-btn">&lt;</button>
+              <button class="pagination-btn pagination-action">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn">4</button>
+              <span>...</span>
+              <button class="pagination-btn">40</button>
+              <button class="pagination-btn">&gt;</button>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </main>
+
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
